@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Medium Popular, Long Name</title>
+</head>
+<body>
+<h1>Medium Popular, Long Name</h1>
+<div th:each="movie : ${mediumPopularLongName}">
+    <img width="150px" th:src="'http://image.tmdb.org/t/p/original' + ${movie.posterPath}"/>
+    <span th:text="${movie.title}"></span>
+</div>
+</body>
+</html>
